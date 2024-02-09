@@ -1,0 +1,230 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poopins', sans-serif;
+}
+body{
+    overflow-x: hidden;
+    background: #e1dddd;
+    min-height: 100vh;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.logo{
+    color: #112434;
+    font-weight: 800;
+    font-size: 2em;
+    text-decoration: none;
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.navigation li{
+    list-style: none;
+}
+.navigation li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #112434;
+    border-radius: 20px;
+}
+.navigation li a:hover,
+.navigation li a.active{
+    background: #112434;
+    color: #fff;
+}
+.sec{
+    position: absolute;
+    top: 100vh;
+    padding: 100px;
+    background: #112434;
+}
+.sec h2{
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.sec p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+.m1{
+    position: absolute;
+    top: 10vh;
+    width: 460px;
+}
+.t2{
+  position: absolute;
+  top: 10vh;
+  left: 150vh;
+  width: 380px;
+}
+.text{
+    font-size: 5em;
+    position: absolute;
+    top: 10vh;
+    left: 40vh;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding: 200px;
+}
+.card{
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    top: 35vh;
+    left: 165vh;
+    cursor:  pointer;
+    display: inline-block;
+  }
+  .card .content{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.089);
+    backdrop-filter: blur(20px);
+    border: 1px solid #fff;
+    background: linear-gradient(120deg,#403077, #112434);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    transition: all 0.4s;
+  }
+  .card .content p{
+   font-size: 0.8em;
+   margin-top: 20px;
+   text-align: center;
+  }
+  .card:before
+  .card:after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    background-color: #7f00ff;
+    z-index: -20;
+    transition: all 0.4s;
+  }
+  .card:before{
+    top: 0;
+    right: 0;
+  }
+  .card:after{
+    bottom: 0;
+    left: 0;
+    background-color: #e100ff;
+  }
+  .tabs{
+    width: 95%;
+    max-width: 600px;
+  }
+  .tabs .tab-header{
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    gap: 10px;
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    background: rgba(196,224,241,0.8);
+    position: absolute;
+    top: 92vh;
+  }
+  .tabs .tab-header > div{
+    flex: 1;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    cursor: pointer;
+  }
+  .tabs .tab-header > div.active{
+    background: #fff;
+    border-radius: 10px;
+  }
+  .tabs .tab-content{
+    position: relative;
+    width: 100%;
+    height: 260px;
+    background: rgba(196,224,241,0.4);
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(196,224,241,0.5);
+    overflow-y: auto;
+  } 
+  .tabs .tab-content > div{
+    padding: 10px 20px;
+    position: absolute;
+    top: 30vh;
+  }
+</style>
+<body>
+    <header>
+        <a href="" class="logo">Logo</a>
+        <ul class="navigation">
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="">Abut</a></li>
+            <li><a href="">Events</a></li>
+            <li><a href="">contact</a></li>
+        </ul>
+    </header>
+    <section class="parallax">
+        <h2 class="text">Parallax Website</h2>
+        <img src="h1.png" alt="" class="m1">
+
+    </section>
+    <div class="card">
+        <div class="content">
+          <h1>Card Box Hover Efeect</h1>
+          <p>Laremipsum main content Description.   Laremipsum main content Description.
+        Laremipsum main content Description.  </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="content">
+          <h1>Card Box Hover Efeect</h1>
+          <p>Laremipsum main content Description.   Laremipsum main content Description.
+        Laremipsum main content Description.  </p>
+        </div>
+      </div>
+    <section class="sec">
+         <h2>Parallax Scrolling Website</h2>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam optio rerum doloribus eligendi consectetur dolorem? Natus vero inventore enim nobis harum ullam amet quae eum aspernatur cupiditate. Dolores consequuntur libero deserunt culpa aliquam iste magni! Facilis quas repellat nostrum aperiam necessitatibus, architecto ipsam cupiditate aut quasi magnam ea iure placeat enim recusandae modi natus quia quidem maxime quod vero! Quidem, laborum. Quia, libero sequi, dolorem quod doloremque optio id officia reiciendis magni ullam itaque tempore veritatis, quasi accusantium et at sit. Vel ipsam consectetur aspernatur rem aliquam quisquam laudantium incidunt dolore reiciendis saepe.Exercitationem, obcaecati dolor sed quasi amet ipsum, magnam veniam dolores nulla facilis, autem nisi aliquid animi ad culpa asperiores a voluptatem voluptate similique. Cum, aut. Quasi, et? Fuga porro a sint velit atque!<br><br>Cumque asperiores non nesciunt, praesentium accusantium laboriosam. Similique iste dolor ut mollitia minima non molestias cum hic, tempore fugit, tempora minus nihil facilis ullam porro unde delectus aperiam maxime dolores, culpa placeat! Eveniet repellat exercitationem veritatis doloribus? Facere, iusto quasi. A quaerat voluptatem quidem. Eum odit minima amet perspiciatis officiis maiores itaque quod hic non expedita, error voluptatum ad aperiam ipsum? Necessitatibus enim expedita repudiandae saepe exercitationem, cupiditate rem perferendis quo doloribus, nemo repellendus fugiat voluptatum optio quibusdam ipsa at libero obcaecati sit, cum inventore atque veniam soluta? Illum nihil unde tempore id, dolorum earum tenetur placeat eum voluptatum nesciunt natus incidunt similique praesentium, obcaecati officiis et quibusdam hic voluptatem, iste corrupti autem quod. Ut, vel ullam consequatur porro pariatur atque maiores at, obcaecati architecto sit velit suscipit esse temporibus aperiam odio quaerat. Incidunt assumenda sit aspernatur et culpa molestias labore quaerat inventore rem tempore id itaque quidem dolorum voluptatibus doloribus hic quo quae, quod illo unde nihil voluptates? <br><br>Rerum delectus cumque optio quis explicabo sint, maxime facere quisquam, ipsum iste ducimus sit velit. Ipsam, praesentium, animi exercitationem consequuntur provident voluptates quidem voluptatibus veritatis ad, aliquam laboriosam non vitae magni! Soluta saepe, maxime numquam ipsum nostrum eum facilis inventore doloribus hic animi, voluptatum nemo minus asperiores odio neque ullam? Voluptas minus, necessitatibus labore rem dignissimos nam consequuntur itaque quam laudantium in at, nostrum sequi nulla optio molestiae illo sapiente, eum nihil tempore unde eligendi pariatur! Commodi sunt ad blanditiis. Vel itaque est ut similique repudiandae sapiente voluptatibus voluptas, quae numquam dicta dolores eveniet quasi eius magnam? Molestiae accusantium necessitatibus, porro ratione nihil provident quia! Accusamus assumenda iure, nesciunt aperiam autem delectus voluptates eius corporis velit incidunt fugiat id voluptas cupiditate sequi minus quam est enim eaque deserunt? Rerum maiores eius eligendi nulla illo repudiandae suscipit id laborum reprehenderit, debitis aliquam fugiat autem, nesciunt consequuntur provident quisquam consequatur. Et recusandae laboriosam facere, esse voluptas porro alias rerum beatae dicta, tempora, autem suscipit! Quam maxime pariatur dignissimos cumque molestias quae, sit recusandae possimus eligendi odit iste numquam doloribus, veniam ex placeat quod deleniti? Numquam fugit, qui itaque maxime, porro, incidunt ratione earum natus impedit aspernatur illum. Delectus, sed quasi? Voluptatibus iure ipsum quas laudantium similique natus nihil ad earum odio eum harum assumenda, reprehenderit, velit est!</p>
+    </section>
+
+
+
+    <div class="tabs">
+      <div class="tab-header">
+      <div class="active">Home</div>
+      <div>Profile</div>
+      <div>Dashbaor</div>
+      <div>Contect</div>
+      </div>
+    </div>
+
+</body>
+</html>
